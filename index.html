@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Everything between the markers is rewritten per route by server/seoPrerender.ts.
+         Keep non-SEO tags (theme-color, icon, preconnect) outside the block. -->
+    <meta name="theme-color" content="#1c2822" />
+    <link rel="icon" href="/no_name_icon.ico" sizes="256x256" />
+    <link rel="apple-touch-icon" href="/no_name_logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <!--seo:start-->
+    <meta name="description" content="No Name — modest women's fashion from Egypt. Sets, tops, skirts, denim and dresses designed for everyday comfort." />
+    <meta name="robots" content="index, follow" />
+    <meta property="googlebot" content="index, follow" />
+    <link rel="canonical" href="https://www.nonameeg.com/" />
+    <link rel="alternate" hreflang="en" href="https://www.nonameeg.com/?lang=en" data-seo="hreflang" />
+    <link rel="alternate" hreflang="ar" href="https://www.nonameeg.com/?lang=ar" data-seo="hreflang" />
+    <link rel="alternate" hreflang="x-default" href="https://www.nonameeg.com/?lang=en" data-seo="hreflang" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="No Name" />
+    <meta property="og:title" content="No Name — Modest Women's Fashion from Egypt" />
+    <meta property="og:description" content="No Name — modest women's fashion from Egypt. Sets, tops, skirts, denim and dresses designed for everyday comfort." />
+    <meta property="og:url" content="https://www.nonameeg.com/" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1538805060514-97d9cc17730c?auto=format&amp;fit=crop&amp;w=1200&amp;h=630&amp;q=90" />
+    <meta property="og:image:alt" content="No Name — Modest Women's Fashion from Egypt" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="No Name — Modest Women's Fashion from Egypt" />
+    <meta name="twitter:description" content="No Name — modest women's fashion from Egypt. Sets, tops, skirts, denim and dresses designed for everyday comfort." />
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1538805060514-97d9cc17730c?auto=format&amp;fit=crop&amp;w=1200&amp;h=630&amp;q=90" />
+    <title>No Name — Modest Women's Fashion from Egypt</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.nonameeg.com/#organization",
+            "name": "No Name",
+            "url": "https://www.nonameeg.com/",
+            "description": "Modest women's fashion from Egypt, designed for everyday comfort.",
+            "logo": "https://www.nonameeg.com/no_name_icon.ico",
+            "currenciesAccepted": "EGP",
+            "paymentAccepted": "Cash on delivery, wallet transfer, InstaPay",
+            "contactPoint": [
+              {
+                "@type": "ContactPoint",
+                "contactType": "customer service",
+                "areaServed": "EG",
+                "availableLanguage": ["en", "ar"]
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.nonameeg.com/#website",
+            "url": "https://www.nonameeg.com/",
+            "name": "No Name",
+            "publisher": { "@id": "https://www.nonameeg.com/#organization" },
+            "inLanguage": ["en", "ar"]
+          },
+          {
+            "@type": "OnlineStore",
+            "@id": "https://www.nonameeg.com/#store",
+            "name": "No Name",
+            "url": "https://www.nonameeg.com/",
+            "description": "Modest women's fashion from Egypt, designed for everyday comfort.",
+            "currenciesAccepted": "EGP",
+            "paymentAccepted": "Cash on delivery, wallet transfer, InstaPay"
+          }
+        ]
+      }
+    </script>
+    <!--seo:end-->
+    <script>
+      // Resolve the stored/queried language before first paint so <html lang> and dir are never wrong.
+      (function () {
+        try {
+          var params = new URLSearchParams(window.location.search);
+          var lang = params.get("lang");
+          if (lang !== "ar" && lang !== "en") {
+            var stored = window.localStorage.getItem("no-name-language");
+            lang = stored === "ar" || stored === "en" ? stored : "en";
+          }
+          document.documentElement.lang = lang;
+          document.documentElement.dir = lang === "ar" ? "rtl" : "ltr";
+        } catch (e) {
+          document.documentElement.lang = "en";
+          document.documentElement.dir = "ltr";
+        }
+      })();
+    </script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script type="module" src="/client/App.tsx"></script>
+  </body>
+</html>

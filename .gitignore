@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+
+# --- dev-guard: never push backups/order-data ---
+store_backup.json
+backups/
+*.store_backup.json
+
+# --- AI agent local caches/worktrees (never part of the app) ---
+.kilo/
+.kilocode/
+
